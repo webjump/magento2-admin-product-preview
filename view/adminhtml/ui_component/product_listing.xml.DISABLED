@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="product_columns" class="Magento\Catalog\Ui\Component\Listing\Columns">
+        <column name="url" sortOrder="20">
+            <settings>
+                <addField>true</addField>
+                <filter>text</filter>
+                <label translate="true">Url</label>
+            </settings>
+        </column>
+        <actionsColumn name="actions" class="Magento\Catalog\Ui\Component\Listing\Columns\ProductActions" sortOrder="200">
+            <settings>
+                <indexField>entity_id</indexField>
+            </settings>
+        </actionsColumn>
+    </columns>
+</listing>

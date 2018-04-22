@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Ui\Component\Listing\Columns\ProductActions">
+        <plugin name="webjump_catalog_product_grid_action_add_preview" type="Webjump\CatalogAdminProductPreview\Plugin\Backend\Catalog\Grid\ProductActions" sortOrder="10" />
+    </type>
+    <type name="Webjump\CatalogAdminProductPreview\Plugin\Backend\Catalog\Grid\ProductActions">
+        <arguments>
+            <argument name="frontendUrlBuilder" xsi:type="object">Magento\Framework\Url</argument>
+        </arguments>
+    </type>
+</config>
