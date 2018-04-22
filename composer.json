@@ -1,0 +1,16 @@
+{
+    "name": "webjump/magento2-admin-product-preview",
+    "description": "Magento 2 Admin Product Preview module add a link in backend catalog product grid that allows you to direct access the product page in frontend.",
+    "version": "0.0.1",
+    "require": {
+        "magento/framework": "~100.0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webjump\\CatalogAdminProductPreview\\": ""
+        },        
+        "files": [
+            "registration.php"
+        ]
+    }    
+}
